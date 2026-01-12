@@ -1,3 +1,4 @@
+/* --- ESTÉTICA ORIGINAL (Respetada al 100%) --- */
 .hud {
   position: sticky;
   top: 0;
@@ -44,3 +45,55 @@ nav a.active::after {
   width: 100%;
 }
 
+/* --- TUS AJUSTES DE POSICIÓN Y ESPACIADO --- */
+
+/* 1. Nombre arriba de la descripción */
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 2. Responsive: Espacio entre descripción y opciones del header */
+@media (max-width: 992px) {
+  .hud {
+    flex-direction: column !important;
+    text-align: center;
+    padding: 20px 16px;
+  }
+
+  .brand {
+    align-items: center; /* Centra el texto en móvil */
+  }
+
+  /* ESTO CREA EL ESPACIO QUE PEDISTE */
+  nav {
+    margin-top: 30px; /* Ajusta este valor para más o menos espacio */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    margin: 5px 8px !important; /* Mantenemos estética pero con aire */
+  }
+}
+
+/* --- CORRECCIÓN BOTONES DE ABAJO (TARJETA) --- */
+@media (max-width: 480px) {
+  .cta {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+  }
+
+  .cta .btn {
+    width: 220px !important; /* Parejos */
+    margin: 0 !important;
+    white-space: nowrap !important; /* Arregla la 's' */
+    word-break: normal !important;
+    text-align: center;
+  }
+}

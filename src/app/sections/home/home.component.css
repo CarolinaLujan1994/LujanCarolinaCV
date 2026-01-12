@@ -12,11 +12,24 @@
     text-shadow: 0 0 12px rgba(180, 92, 255, 0.25);
 }
 
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap; 
+}
+
+
 .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 16px;
     border-radius: 10px;
-    margin: 8px;
     text-decoration: none;
+    transition: filter 0.3s ease;
+    white-space: nowrap; 
+    word-break: normal;
 }
 
 .neon {
@@ -32,6 +45,19 @@
 
 .btn:hover {
     filter: brightness(1.1);
+}
+
+@media (max-width: 480px) {
+    .cta {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;       
+        max-width: 220px;  
+        margin: 0;         
+    }
 }
 
 .card-img {
