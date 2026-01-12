@@ -1,0 +1,45 @@
+<app-card title="Educación">
+    @for (ed of educacion; track ed) {
+    <div class="edu-item">
+        <strong>{{ ed.titulo }}</strong> — {{ ed.institucion }} ({{ ed.periodo }})
+    </div>
+    }
+    <br>
+    <app-accordion title="Materias aprobadas">
+
+        @for (ma of materiasAprobadas; track ma) {
+        <div class="edu-item">
+            {{ma.id}} - {{ ma.nombre }}
+        </div>
+        }
+    </app-accordion>
+<br>
+    <a href="https://unahur.edu.ar/wp-content/uploads/2023/04/Tecnicatura-Universitaria-en-Programacion-de-Viodejuegos-1.pdf"
+        target="_blank">Plan de estudio</a>
+
+</app-card>
+
+<br>
+
+<!-- <app-card title="Certificaciones">
+    @for (ce of certificaciones; track ce) {
+    <br>
+    <div class="edu-item">
+        <img (click)="ampliarImagen(ce.img)" class="img-miniatura" [src]="ce.img" alt="Certificado de {{ ce.titulo }}"> — {{ ce.titulo }}
+    </div>
+
+    <div class="modal" *ngIf="imagenAmpliada" (click)="cerrarModal()">
+        <img [src]="imagenAmpliada" alt="Certificado ampliado">
+    </div>
+
+    }
+</app-card> -->
+
+<app-card title="Certificaciones">
+    @for (ce of certificaciones; track ce) {
+    <br>
+    <app-accordion [title]="ce.titulo ">
+        <img [src]="ce.img" alt="Certificado de {{ ce.titulo }}" class="img-certificado">
+    </app-accordion>
+    }
+</app-card>

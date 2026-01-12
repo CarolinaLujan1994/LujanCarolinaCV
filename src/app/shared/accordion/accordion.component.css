@@ -1,0 +1,36 @@
+.acc {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.acc-btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 14px;
+    background: #161936;
+    color: var(--texto);
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acc-btn:hover {
+    background: #1b1f44;
+}
+
+.acc-panel {
+    padding: 12px 14px;
+    background: var(--panel);
+}
+
+.chev {
+    transition: transform .2s ease;
+    color: var(--azul-cyber);
+}
+
+.chev.open {
+    transform: rotate(90deg);
+}

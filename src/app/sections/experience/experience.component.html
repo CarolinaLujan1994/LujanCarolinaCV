@@ -1,0 +1,26 @@
+<app-card title="Experiencia">
+    @for (exp of experiencia; track exp) {
+    <app-accordion [title]="exp.rol + ' — ' + exp.empresa + ' (' + exp.periodo + ')'">
+        <ul>
+            @for (t of exp.tareas; track t) {
+            <li>{{ t }}</li>
+            }
+        </ul>
+    </app-accordion>
+    }
+</app-card>
+
+<br>
+
+<app-card title="Otras experiencias">
+    @for (exp of otrasExperiencias; track exp) {
+        <br>
+    <app-accordion [title]="exp.rol + ' — ' + exp.empresa + ' (' + exp.periodo + ')'">
+        <ul>
+            @for (t of exp.tareas; track t) {
+            <li>{{ t }}</li>
+            }
+        </ul>
+    </app-accordion>
+    }
+</app-card>

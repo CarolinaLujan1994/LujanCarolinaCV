@@ -1,0 +1,16 @@
+<app-card title="Proyectos">
+    @for (pr of proyectos; track pr) {
+    <app-card>
+        <ul class="badges">
+            <li><strong>Nombre: </strong> {{ pr.nombre }}</li>
+            <li><strong>Tipo: </strong> {{ pr.tipo }}</li>
+            <li><strong>Descripción: </strong> {{ pr.descripcion }}</li>
+            <li><strong>Enlace: </strong> <a [href]="pr.link" target="_blank">{{ pr.link }}</a></li>
+            <li><strong>Año: </strong> {{pr.anio}}</li>
+        </ul>
+    </app-card>
+    <br>
+    }
+</app-card>
+
+<br>

@@ -1,0 +1,9 @@
+<div class="acc">
+    <button class="acc-btn" (click)="open = !open">
+        <span>{{ title }}</span>
+        <span class="chev" [class.open]="open">▸</span>
+    </button>
+    <div class="acc-panel" [style.display]="open ? 'block' : 'none'">
+        <ng-content></ng-content>
+    </div>
+</div>

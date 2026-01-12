@@ -1,0 +1,11 @@
+<app-card title="Contacto">
+    <ul class="contact">
+        <li><strong>Ubicación: </strong> {{ data.ubicacion }}</li>
+        <li><strong>Teléfono: </strong> {{ data.telefono }}</li>
+        <li><strong>Email: </strong> <a [href]="'mailto:'+data.email">{{ data.email }}</a></li>
+        <li><strong>Email (universidad): </strong> <a [href]="'mailto:'+data.email2">{{ data.email2 }}</a></li>
+        <li><strong>LinkedIn: </strong> <a [href]="data.linkedin" target="_blank">Perfil</a></li>
+        <li><strong>GitHub: </strong> <a [href]="data.github" target="_blank">Perfil</a></li>
+        <li><strong>Instagram (arte): </strong> <a [href]="data.instagram" target="_blank">Perfil</a></li>
+    </ul>
+</app-card>
