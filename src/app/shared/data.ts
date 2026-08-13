@@ -167,6 +167,16 @@ export const PROYECTOS: Projects[] = [
     link: '',
     anio: '2026'
   },
+
+    {
+    nombre: 'Registro de usuarios',
+    tipo: 'Aplicación web',
+    descripcion: 'Aplicación web desarrollada con Angular y TypeScript para gestionar un registro de usuarios de forma dinámica e interactiva.',
+    herramientras: 'Angular · TypeScript',
+    imagen: 'assets/imagenProyectos/registerUsers.png',
+    link: 'https://carolinalujan1994.github.io/RegistroDeUsuariosConAngular/',
+    anio: '2026'
+  },
 ];
 
 export const ILUSTRACIONES: Ilustrators[] = [
