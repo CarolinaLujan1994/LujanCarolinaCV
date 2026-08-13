@@ -1,0 +1,37 @@
+<!-- <app-card title="ILUSTRACIONES">
+
+    <p>Algunos de las ilsutraciones que hice durante estos meses.</p>
+
+    <div class="ilustraciones">
+        <img src="assets/ilustraciones/ilu1.jpg" alt="Ilustración 1">
+        <img src="assets/ilustraciones/ilu2.jpg" alt="Ilustración 2">
+        <img src="assets/ilustraciones/ilu3.jpg" alt="Ilustración 3">
+        <img src="assets/ilustraciones/ilu4.jpg" alt="Ilustración 4">
+        <img src="assets/ilustraciones/ilu5.jpg" alt="Ilustración 4">
+    </div>
+</app-card> -->
+
+<app-card title="ILUSTRACIONES">
+
+    <p>Algunos de las ilsutraciones que hice durante estos meses. Si querés ver más, podés ir a mi <a [href]="data.instagram" target="_blank">instagram artístico</a>.</p>
+    <br>
+
+    <div class="ilustraciones">
+        @for (ilustracion of ilustraciones; track ilustracion) {
+        <img [src]="ilustracion.imagen" [alt]="ilustracion.titulo" (click)="abrirImagen(ilustracion.imagen)">
+        }
+    </div>
+
+    @if (imagenSeleccionada) {
+    <div class="visor" (click)="cerrarImagen()">
+
+        <div class="imagen-ampliada">
+            <button class="cerrar" (click)="cerrarImagen()">×</button>
+
+            <img [src]="imagenSeleccionada" alt="Ilustración ampliada" (click)="$event.stopPropagation()">
+        </div>
+
+    </div>
+    }
+
+</app-card>

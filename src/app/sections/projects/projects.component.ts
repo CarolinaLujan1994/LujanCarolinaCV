@@ -9,6 +9,6 @@ import { CardComponent } from '../../shared/card/card.component';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  proyectos = PROYECTOS;
+  proyectos = [...PROYECTOS].sort((a, b) => Number(b.anio) - Number(a.anio));
 
 }

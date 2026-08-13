@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CardComponent } from '../../shared/card/card.component';
-import { CERTIFICACIONES, EDUCACION, MATERIASAPROBADAS } from '../../shared/data';
+import { CERTIFICACIONES, EDUCACION } from '../../shared/data';
 import { CommonModule } from '@angular/common';
 import { AccordionComponent } from "../../shared/accordion/accordion.component";
 
@@ -15,7 +15,6 @@ import { AccordionComponent } from "../../shared/accordion/accordion.component";
 export class EducationComponent {
   educacion = EDUCACION;
   certificaciones = CERTIFICACIONES;
-  materiasAprobadas = MATERIASAPROBADAS;
 
 /*   imagenAmpliada: string | null = null
 

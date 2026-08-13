@@ -1,4 +1,4 @@
-<app-card title="Contacto">
+<!-- <app-card title="CONTACTO">
     <ul class="contact">
         <li><strong>Ubicación: </strong> {{ data.ubicacion }}</li>
         <li><strong>Teléfono: </strong> {{ data.telefono }}</li>
@@ -8,4 +8,57 @@
         <li><strong>GitHub: </strong> <a [href]="data.github" target="_blank">Perfil</a></li>
         <li><strong>Instagram (arte): </strong> <a [href]="data.instagram" target="_blank">Perfil</a></li>
     </ul>
+</app-card> -->
+
+<app-card title="CONTACTO">
+
+    <div class="contact">
+
+        <div class="contact-item">
+            <strong>Ubicación</strong>
+            <span>{{ data.ubicacion }}</span>
+        </div>
+
+        <div class="contact-item">
+            <strong>Teléfono</strong>
+            <span>{{ data.telefono }}</span>
+        </div>
+
+        <div class="contact-item">
+            <strong>Email</strong>
+            <a [href]="'mailto:' + data.email">
+                {{ data.email }}
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <strong>Email (universidad)</strong>
+            <a [href]="'mailto:' + data.email2">
+                {{ data.email2 }}
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <strong>LinkedIn</strong>
+            <a [href]="data.linkedin" target="_blank">
+                Ver perfil
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <strong>GitHub</strong>
+            <a [href]="data.github" target="_blank">
+                Ver perfil
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <strong>Instagram</strong>
+            <a [href]="data.instagram" target="_blank">
+                Ilustración y arte
+            </a>
+        </div>
+
+    </div>
+
 </app-card>

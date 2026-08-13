@@ -3,23 +3,26 @@ import { Education } from './models/education.model';
 import { Certificates } from './models/certificates.model';
 import { Materias } from './models/materias.model';
 import { Projects } from './models/proyectos.model';
+import { Ilustrators } from './models/ilustrators.model';
 
 export const EXPERIENCIA: Experience[] = [{
   rol: 'Programadora',
   empresa: 'Hospital de Clínicas - Gral. José de San Martín',
   periodo: 'Feb 2021 - Jul 2023',
   tareas: [
-    'Desarrollo front-end y back-end según especificaciones',
-    'Planificación y ejecución de proyectos',
-    'Testing y documentación técnica detallada',
-    'Resolución de problemas y presentación de soluciones'
+    'Parte del equipo de programación del actual portal web del hospital: ',
+    'Participé en el desarrollo y mantenimiento de aplicaciones front-end y back-end utilizando Angular y TypeScript.',
+    'Trabajé en la gestión y consulta de bases de datos con SQL Server.',
+    'Realicé tareas de testing y documentación técnica.',
+    'Colaboré con el equipo en la resolución de problemas técnicos y la implementación de mejoras en los sistemas existentes.',
+    'Consumí y vinculé APIs REST para la integración de diferentes módulos.'
   ]
 }];
 
 export const EDUCACION: Education[] = [{
   institucion: 'Universidad Nacional de Hurlingham',
   titulo: 'Tecnicatura Universitaria en Programación de Videojuegos',
-  periodo: 'Jul 2023 - Actualidad'
+  periodo: 'Jul 2023 - Diciembre 2026'
 }];
 
 export const CONTACTO = {
@@ -38,7 +41,7 @@ export const OTRASEXPERIENCIAS: Experience[] = [
     empresa: 'Álvarez (temporal)',
     periodo: 'Ene 2020 - Nov 2020',
     tareas: [
-      'Armado de bombillas'
+      'Tareas operativas en línea de producción para el armado de bombillas.'
     ]
   },
   {
@@ -46,7 +49,8 @@ export const OTRASEXPERIENCIAS: Experience[] = [
     empresa: 'Autómono',
     periodo: 'Mar 2018 - Ene 2019',
     tareas: [
-      'Venta y producción de productos de pastelería'
+      'Producción y venta de productos de pastelería artesanal.',
+      'Gestión de pedidos, atención a clientes y manejo de redes sociales para la comercialización.'
     ]
   },
 
@@ -55,8 +59,8 @@ export const OTRASEXPERIENCIAS: Experience[] = [
     empresa: 'Cinemark Hoyts Argentina (temporal)',
     periodo: 'Jul 2016 - Ago 2016',
     tareas: [
-      'Atención al cliente',
-      'Limpieza da salas'
+      'Atención directa al público y gestión de ingresos a salas.',
+      'Mantenimiento y limpieza de salas.'
     ]
   },
 
@@ -65,9 +69,8 @@ export const OTRASEXPERIENCIAS: Experience[] = [
     empresa: 'Avios Group SRL',
     periodo: 'Oct 2014 - Dic 2015',
     tareas: [
-      'Atención en guardarropas',
-      'Proveedor de insumos a corredores',
-      'Guía caminos'
+      'Atención en guardarropas y recepción de asistentes.',
+      'Soporte logístico ofreciendo insumos necesarios a los participantes de eventos.',
     ]
   }
 ]
@@ -99,31 +102,14 @@ export const CERTIFICACIONES: Certificates[] = [
   }
 ];
 
-export const MATERIASAPROBADAS: Materias[] = [
-  { id: 1, nombre: 'Matemática para informática I' },
-  { id: 2, nombre: 'Introducción a lógica y problemas computacionales' },
-  { id: 3, nombre: 'Introducción a los Videojuegos' },
-  { id: 4, nombre: 'Nuevos entornos y lenguajes: la producción de conocimiento en la cultura digital' },
-  { id: 5, nombre: 'Taller de diseño conceptual de juegos' },
-  { id: 6, nombre: 'Programación estructurada' },
-  { id: 7, nombre: 'Arte digital para videojuegos' },
-  { id: 8, nombre: 'Inglés I' },
-  { id: 9, nombre: 'Bases de Datos' },
-  { id: 10, nombre: 'Programación con objetos' },
-  { id: 11, nombre: 'Introducción a motores de videojuegos' },
-  { id: 12, nombre: 'Materia UNAHUR' },
-  { id: 13, nombre: 'Programación de videojuegos I' },
-  { id: 14, nombre: 'Electiva I' },
-  { id: 15, nombre: 'Construcción de interfaces de usuario' },
-  { id: 16, nombre: 'Inglés II' },
-  { id: 17, nombre: 'Electiva II' },
-]
 
 export const PROYECTOS: Projects[] = [
   {
     nombre: 'House Scape',
     tipo: 'Juego',
     descripcion: 'Big Red es una manzana que ha cobrado vida y sueña con escapar de la casa. Recolectando monedas, esquivando enemigos y superando obstáculos en una aventura llena de acción y desafíos',
+    herramientras: 'GDevelop 5',
+    imagen: 'assets/imagenProyectos/houseScape.jpg',
     link: 'https://nicosalanitri.itch.io/house-scape',
     anio: '2024'
   },
@@ -131,6 +117,8 @@ export const PROYECTOS: Projects[] = [
     nombre: 'Dragon Slug',
     tipo: 'Juego',
     descripcion: 'Vita, la dragona verde, debe recuperar los huevos robados por los minotauros. Enfrentará enemigos y peligros mortales en una misión donde la furia de una madre decidirá el destino de su especie',
+    herramientras: 'GDevelop 5',
+    imagen: 'assets/imagenProyectos/dragonSlug.png',
     link: 'https://wenchu77.itch.io/dragon-slug',
     anio: '2024'
   },
@@ -138,6 +126,8 @@ export const PROYECTOS: Projects[] = [
     nombre: 'El Anciano Gran Mago',
     tipo: 'Animación',
     descripcion: 'Basado en un cuento de Javier Villafañe',
+    herramientras: 'Krita',
+    imagen: 'assets/imagenProyectos/elMago.png',
     link: 'https://drive.google.com/drive/u/0/folders/1_1w64YJBQL5kafScUQdCzRBAqsXp-z4W',
     anio: '2025'
   },
@@ -145,6 +135,8 @@ export const PROYECTOS: Projects[] = [
     nombre: 'Arcane Scape',
     tipo: 'Juego',
     descripcion: 'Un mago anciano despierta en un bosque encantado invadido por fantasmas. Para restaurar la paz, deberá explorar, recolectar corazones y pócimas mágicas, y enfrentar peligros mientras limpia el bosque de entidades espectrales',
+    herramientras: 'JavaScript · PixiJS',
+    imagen: 'assets/imagenProyectos/arcaneScape.png',
     link: 'https://carolinalujan1994.github.io/ProgramacionVideoJuegos1/',
     anio: '2025'
   },
@@ -152,14 +144,50 @@ export const PROYECTOS: Projects[] = [
     nombre: 'Construcción de Interfaces',
     tipo: 'Documento',
     descripcion: 'Proyecto para la construcción de un posible juego, detallando narrativa, mecánicas, interfaz y referencia a otros títulos, con conclusiones sobre diseño de HUD experiencia del jugador',
-    link: 'https://docs.google.com/presentation/d/1i3NyrCEBKHY1uRxWf5JZlBUyG2HQPdqscLqc9FLj4wY/edit?slide=id.p#slide=id.p',
+    herramientras: 'Google Slides',
+    imagen: 'assets/imagenProyectos/construccionDeInterfaces.png',
+    link: 'assets/documents/construccionDeInterfaces.pdf',
     anio: '2025'
   },
   {
-    nombre: 'Registro de usuarios',
-    tipo: 'Aplicación web',
-    descripcion: 'Mini sistema de registro de usuarios desarrollado en Angular. El mismo permite agregar, editar y eliminar inscriptos, mostrando la lista en una tabla con ids',
-    link: 'https://carolinalujan1994.github.io/RegistroDeUsuariosConAngular/',
+    nombre: 'Golf 2D - EN PROCESO',
+    tipo: 'Juego',
+    descripcion: '',
+    herramientras: 'Unity · C#',
+    imagen: 'assets/imagenProyectos/enProceso.png',
+    link: '',
     anio: '2026'
   },
+  {
+    nombre: 'Novela visual - PRÓXIMAMENTE',
+    tipo: 'Juego',
+    descripcion: '—',
+    herramientras: 'Unity · C#',
+    imagen: 'assets/imagenProyectos/enProceso.png',
+    link: '',
+    anio: '2026'
+  },
+];
+
+export const ILUSTRACIONES: Ilustrators[] = [
+  {
+    imagen: 'assets/ilustraciones/ilustracion1.jpg',
+    titulo: 'Ilustración 1'
+  },
+  {
+    imagen: 'assets/ilustraciones/ilustracion2.png',
+    titulo: 'Ilustración 2'
+  },
+  {
+    imagen: 'assets/ilustraciones/ilustracion3.png',
+    titulo: 'Ilustración 3'
+  },
+  {
+    imagen: 'assets/ilustraciones/ilustracion4.png',
+    titulo: 'Ilustración 4'
+  },
+    {
+    imagen: 'assets/ilustraciones/ilustracion5.png',
+    titulo: 'Ilustración 5'
+  }
 ];

@@ -6,6 +6,7 @@ import { EducationComponent } from './sections/education/education.component';
 import { SkillsComponent } from './sections/skills/skills.component';
 import { ContactComponent } from './sections/contact/contact.component';
 import { ProjectsComponent } from './sections/projects/projects.component';
+import { IlustratorComponent } from './sections/ilustrator/ilustrator.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'contacto', component: ContactComponent },
   { path: 'proyectos', component: ProjectsComponent },
+  { path: 'ilustraciones', component: IlustratorComponent },
   { path: '**', redirectTo: '' }
 ];

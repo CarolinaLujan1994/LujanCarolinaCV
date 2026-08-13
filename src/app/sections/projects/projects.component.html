@@ -1,10 +1,11 @@
-<app-card title="Proyectos">
+<!-- <app-card title="Proyectos">
     @for (pr of proyectos; track pr) {
     <app-card>
         <ul class="badges">
             <li><strong>Nombre: </strong> {{ pr.nombre }}</li>
             <li><strong>Tipo: </strong> {{ pr.tipo }}</li>
             <li><strong>Descripción: </strong> {{ pr.descripcion }}</li>
+            <li><strong>Herramientas: </strong> {{ pr.herramientras }}</li>
             <li><strong>Enlace: </strong> <a [href]="pr.link" target="_blank">{{ pr.link }}</a></li>
             <li><strong>Año: </strong> {{pr.anio}}</li>
         </ul>
@@ -13,4 +14,34 @@
     }
 </app-card>
 
-<br>
+<br> -->
+
+<app-card title="PROYECTOS">
+    @for (pr of proyectos; track pr) {
+        <app-card>
+            <div class="proyecto">
+
+                <div class="proyecto-imagen">
+                    <img [src]="pr.imagen" [alt]="pr.nombre">
+                </div>
+
+                <div class="proyecto-info">
+                    <ul class="badges">
+                        <li><strong>Nombre: </strong>{{ pr.nombre }}</li>
+                        <li><strong>Tipo: </strong>{{ pr.tipo }}</li>
+                        <li><strong>Descripción: </strong>{{ pr.descripcion }}</li>
+                        <li><strong>Herramientas: </strong>{{ pr.herramientras }}</li>
+                        <li>
+                            <strong>Enlace: </strong>
+                            <a [href]="pr.link" target="_blank">Ver proyecto</a>
+                        </li>
+                        <li><strong>Año: </strong>{{ pr.anio }}</li>
+                    </ul>
+                </div>
+
+            </div>
+        </app-card>
+
+        <br>
+    }
+</app-card>
