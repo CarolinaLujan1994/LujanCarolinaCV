@@ -21,7 +21,7 @@ La idea es mostrar no solo mi perfil profesional y mis conocimientos, sino tambi
 - CSS
 - Git / GitHub
 
-## ✨✨ Objetivo
+## ✨ Objetivo
 
 Presentar mi perfil de una manera atractiva, accesible y diferente a un CV tradicional, combinando mi lado técnico con mi lado creativo.
 
