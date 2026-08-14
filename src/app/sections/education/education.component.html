@@ -1,4 +1,4 @@
-<app-card title="Educación">
+<app-card title="EDUCACIÓN">
     @for (ed of educacion; track ed) {
     <div class="edu-item">
         <strong>{{ ed.titulo }}</strong> — {{ ed.institucion }} ({{ ed.periodo }})
@@ -34,7 +34,7 @@
     }
 </app-card> -->
 
-<app-card title="Certificaciones">
+<app-card title="CERTIFICACIONES">
     @for (ce of certificaciones; track ce) {
     <br>
     <app-accordion [title]="ce.titulo ">

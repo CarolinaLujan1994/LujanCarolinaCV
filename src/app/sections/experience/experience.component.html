@@ -1,4 +1,4 @@
-<app-card title="Experiencia">
+<app-card title="EXPERIENCIA">
     @for (exp of experiencia; track exp) {
     <app-accordion [title]="exp.rol + ' — ' + exp.empresa + ' (' + exp.periodo + ')'">
         <ul>
@@ -12,7 +12,7 @@
 
 <br>
 
-<app-card title="Otras experiencias">
+<app-card title="OTRAS EXPERIENCIAS">
     @for (exp of otrasExperiencias; track exp) {
         <br>
     <app-accordion [title]="exp.rol + ' — ' + exp.empresa + ' (' + exp.periodo + ')'">

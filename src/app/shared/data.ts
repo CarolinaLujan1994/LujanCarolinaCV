@@ -22,7 +22,7 @@ export const EXPERIENCIA: Experience[] = [{
 export const EDUCACION: Education[] = [{
   institucion: 'Universidad Nacional de Hurlingham',
   titulo: 'Tecnicatura Universitaria en Programación de Videojuegos',
-  periodo: 'Jul 2023 - Diciembre 2026'
+  periodo: 'Jul 2023 - Dic 2026'
 }];
 
 export const CONTACTO = {
@@ -150,16 +150,16 @@ export const PROYECTOS: Projects[] = [
     anio: '2025'
   },
   {
-    nombre: 'Golf 2D - EN PROCESO',
+    nombre: 'Golf 2D',
     tipo: 'Juego',
-    descripcion: '',
+    descripcion: 'J',
     herramientras: 'Unity · C#',
     imagen: 'assets/imagenProyectos/enProceso.png',
     link: '',
     anio: '2026'
   },
   {
-    nombre: 'Novela visual - PRÓXIMAMENTE',
+    nombre: '* Novela visual - PRÓXIMAMENTE',
     tipo: 'Juego',
     descripcion: '—',
     herramientras: 'Unity · C#',
