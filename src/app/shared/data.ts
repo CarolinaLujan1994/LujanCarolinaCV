@@ -149,17 +149,9 @@ export const PROYECTOS: Projects[] = [
     link: 'assets/documents/construccionDeInterfaces.pdf',
     anio: '2025'
   },
+
   {
-    nombre: 'Golf 2D',
-    tipo: 'Juego',
-    descripcion: 'J',
-    herramientras: 'Unity · C#',
-    imagen: 'assets/imagenProyectos/enProceso.png',
-    link: '',
-    anio: '2026'
-  },
-  {
-    nombre: '* Novela visual - PRÓXIMAMENTE',
+    nombre: '(*) Novela visual - PRÓXIMAMENTE',
     tipo: 'Juego',
     descripcion: '—',
     herramientras: 'Unity · C#',
@@ -168,7 +160,17 @@ export const PROYECTOS: Projects[] = [
     anio: '2026'
   },
 
-    {
+  {
+    nombre: 'Golf 2D',
+    tipo: 'Juego',
+    descripcion: 'Videojuego de golf 2D con sistema de turnos, límite de golpes y tiempo por jugador, selección de cantidad de jugadores y hoyos, diferentes tipos de disparo y física 2D.',
+    herramientras: 'Unity · C#',
+    imagen: 'assets/imagenProyectos/golf2d.png',
+    link: 'https://mizu94.itch.io/golf-2d',
+    anio: '2026'
+  },
+
+  {
     nombre: 'Registro de usuarios',
     tipo: 'Aplicación web',
     descripcion: 'Aplicación web desarrollada con Angular y TypeScript para gestionar un registro de usuarios de forma dinámica e interactiva.',
@@ -176,7 +178,7 @@ export const PROYECTOS: Projects[] = [
     imagen: 'assets/imagenProyectos/registerUsers.png',
     link: 'https://carolinalujan1994.github.io/RegistroDeUsuariosConAngular/',
     anio: '2026'
-  },
+  }
 ];
 
 export const ILUSTRACIONES: Ilustrators[] = [
@@ -196,7 +198,7 @@ export const ILUSTRACIONES: Ilustrators[] = [
     imagen: 'assets/ilustraciones/ilustracion4.png',
     titulo: 'Ilustración 4'
   },
-    {
+  {
     imagen: 'assets/ilustraciones/ilustracion5.png',
     titulo: 'Ilustración 5'
   }
